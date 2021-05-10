@@ -19,15 +19,17 @@
 body {
 	position: relative;
 	width: 100%;
-	color: rgba(0,0,0,0.87);
-	background: #d9a7c7;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	min-height: 100vh;
+	padding-top: 70px;
+	color: white;
+	background: #314755;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Manrope', sans-serif;
 }
 
 .main-wrapper {
@@ -35,29 +37,15 @@ body, h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 
-h2 {
-	font-size: 34px;
-	line-height: 38px;
-	margin-bottom: 20px;
-	margin-top: 40px;
-	text-align: center;
-}
-
-h3 {
-	font-size: 20px;
-	line-height: 30px;
-	border-bottom: 2px solid black;
-	display: inline-block;
-}
 
 a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 a.underline {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 }
 
 a.underline:hover {
@@ -74,12 +62,20 @@ p {
 	margin-bottom: 22px;
 }
 
-span {
-	border-bottom: 1.5px solid black;
+ul {
+	list-style: none;
+	max-width: 300px;
+	margin: 10px auto 45px auto;
 }
 
-.text-center {
+li {
+	display: inline-block;
+	width: 49%;
 	text-align: center;
+}
+
+li img {
+	max-width: 70%;
 }
 
 .image-wrapper {
@@ -87,25 +83,13 @@ span {
 	width: 213px;
 	border-radius: 50%;
 	border: 2px solid white;
-	margin: 70px auto 30px auto;
+	margin: 0px auto 30px auto;
 	overflow: hidden;
 }
 
-img {
+.image-wrapper img {
 	height: 100%;
 	display: block;
-}
-.work {
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-
-.work p {
-	font-size: 18px;
-	line-height: 26px;
-	max-width: 600px;
-	margin-top: 10px;
-	margin-bottom: 15px;
 }
 
 .content {
@@ -117,6 +101,7 @@ img {
 
 .contact {
 	margin: 30px 0 60px 0;
+	text-align:center;
 }
 
 .contact a {
