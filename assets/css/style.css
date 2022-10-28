@@ -5,10 +5,14 @@
 	content: " ";
 	clear: both;
 	height: 0;
-	}
-* html .clearfix             { zoom: 1; } /* IE6 */
+}
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
 
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+*:first-child + html .clearfix {
+	zoom: 1;
+} /* IE7 */
 
 * {
 	padding: 0;
@@ -22,19 +26,24 @@ body {
 	min-height: 100vh;
 	padding-top: 70px;
 	color: #03071e;
-	font-size:  16px;
-	background: #e7d1c9;
+	font-size: 16px;
+	background: #eee4f1;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Bona Nova', 'Arapey', 'Helvetica', serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Bona Nova", "Arapey", "Helvetica", serif;
 }
 
 .main-wrapper {
 	padding: 0 40px;
 	position: relative;
 }
-
 
 a {
 	color: #03071e;
